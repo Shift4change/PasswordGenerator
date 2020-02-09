@@ -29,17 +29,21 @@ function generatePassword() {
     var characterCount = prompt('How many characters would you like your password to be')
     if (characterCount > 8 && characterCount < 128) {
 
+        var numberConfirm = confirm("number");
+
+        var lowercaseConfirm = confirm("lowercase");
+    
+        var uppercaseConfirm = confirm("uppercase");
+    
+        var specialConfirm = confirm("special");
+    
+
     } else {
         alert("the length cant be less then 8 and higher then 128");
+        var characterCount = prompt('How many characters would you like your password to be');
     }
 
-    var numberConfirm = confirm("number");
-
-    var lowercaseConfirm = confirm("lowercase");
-
-    var uppercaseConfirm = confirm("uppercase");
-
-    var specialConfirm = confirm("special");
+   
 
     // ==================================================================================================
 
