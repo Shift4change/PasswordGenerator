@@ -26,7 +26,7 @@ function generatePassword() {
     // Ask user how many characters ?
 
 
-    var characterCount = prompt('How many characters would you like your password to be')
+    var characterCount = prompt('How many characters would you like your password to be');
     if (characterCount > 8 && characterCount < 128) {
 
         var numberConfirm = confirm("number");
@@ -40,8 +40,11 @@ function generatePassword() {
 
     } else {
         alert("the length cant be less then 8 and higher then 128");
-        var characterCount = prompt('How many characters would you like your password to be');
+        
+        return("Your Password goes here");
     }
+
+    
 
    
 
